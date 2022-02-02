@@ -14,7 +14,9 @@ Folding@home の統計情報を表示する[PukiWiki](https://pukiwiki.osdn.jp/)
 
 ## インストール
 
-fahstats.inc.php を PukiWiki の plugin ディレクトリに配置してください。
+下記GitHubページからダウンロードした fahstats.inc.php を PukiWiki の plugin ディレクトリに配置してください。
+
+[https://github.com/ikamonster/pukiwiki-fahstats](https://github.com/ikamonster/pukiwiki-fahstats)
 
 ## 使い方
 
