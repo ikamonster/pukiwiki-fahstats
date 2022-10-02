@@ -1,7 +1,7 @@
 <?php
 /*
 PukiWiki - Yet another WikiWikiWeb clone.
-fahstats.inc.php, v1.21 2020 M.Taniguchi
+fahstats.inc.php, v1.2.2 2020 M.Taniguchi
 License: GPL v3 or (at your option) any later version
 
 Folding@home の統計情報を表示するプラグイン。
@@ -122,13 +122,13 @@ function plugin_fahstats_exec($id, $text = null) {
 			$text = <<<EOT
 <table class="style_table" cellspacing="1" border="0">
 	<tbody>
-		<tr><th class="style_th"${thStyle}">Donor</th><td class="style_td"${tdStyle}><a href="${donorStatsUrl}" rel="noopener nofollow external">%name%</a></td></tr>
-		<tr><th class="style_th"${thStyle}>Date of last Work Unit</th><td class="style_td"${tdStyle}>%last%</td></tr>
-		<tr><th class="style_th"${thStyle}>Total score</th><td class="style_td"${tdStyle}>%score%</td></tr>
-		<tr><th class="style_th"${thStyle}>Total WUs</th><td class="style_td"${tdStyle}>%wus%</td></tr>
-		<tr><th class="style_th"${thStyle}>Overall rank (if points are combined)</th><td class="style_td"${tdStyle}>%rank% of %users%</td></tr>
-		<tr><th class="style_th"${thStyle}>Active clients (within 50 days)</th><td class="style_td"${tdStyle}>%active_50%</td></tr>
-		<tr><th class="style_th"${thStyle}>Active clients (within 7 days)</th><td class="style_td"${tdStyle}>%active_7%</td></tr>
+		<tr><th class="style_th"{$thStyle}">Donor</th><td class="style_td"{$tdStyle}><a href="{$donorStatsUrl}" rel="noopener nofollow external">%name%</a></td></tr>
+		<tr><th class="style_th"{$thStyle}>Date of last Work Unit</th><td class="style_td"{$tdStyle}>%last%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Total score</th><td class="style_td"{$tdStyle}>%score%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Total WUs</th><td class="style_td"{$tdStyle}>%wus%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Overall rank (if points are combined)</th><td class="style_td"{$tdStyle}>%rank% of %users%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Active clients (within 50 days)</th><td class="style_td"{$tdStyle}>%active_50%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Active clients (within 7 days)</th><td class="style_td"{$tdStyle}>%active_7%</td></tr>
 	</tbody>
 </table>
 EOT;
@@ -137,11 +137,11 @@ EOT;
 			$text = <<<EOT
 <table class="style_table" cellspacing="1" border="0">
 	<tbody>
-		<tr><th class="style_th"${thStyle}>Team</th><td class="style_td"${tdStyle}><a href="${teamStatsUrl}" rel="noopener nofollow external">%name%</a></td></tr>
-		<tr><th class="style_th"${thStyle}>Team ID</th><td class="style_td"${tdStyle}>%id%</td></tr>
-		<tr><th class="style_th"${thStyle}>Grand score</th><td class="style_td"${tdStyle}>%score%</td></tr>
-		<tr><th class="style_th"${thStyle}>Work Unit count</th><td class="style_td"${tdStyle}>%wus%</td></tr>
-		<tr><th class="style_th"${thStyle}>Team ranking</th><td class="style_td"${tdStyle}>%rank%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Team</th><td class="style_td"{$tdStyle}><a href="{$teamStatsUrl}" rel="noopener nofollow external">%name%</a></td></tr>
+		<tr><th class="style_th"{$thStyle}>Team ID</th><td class="style_td"{$tdStyle}>%id%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Grand score</th><td class="style_td"{$tdStyle}>%score%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Work Unit count</th><td class="style_td"{$tdStyle}>%wus%</td></tr>
+		<tr><th class="style_th"{$thStyle}>Team ranking</th><td class="style_td"{$tdStyle}>%rank%</td></tr>
 	</tbody>
 </table>
 EOT;
